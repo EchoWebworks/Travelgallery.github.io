@@ -1,0 +1,399 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('photo/banner1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+nav{
+    width:100%;
+    height:80px;
+    background-color: aliceblue;
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.logo{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.logo span{
+    color:red;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-size: 20px;
+}
+.menu a:first-child{
+    color: red;
+}
+
+.menu a:hover{
+    color:red;
+}
+.icon i{
+    font-size: 20px;
+}
+
+.icon a{
+    text-decoration: none;
+    background: red;
+    color:black;
+    padding :10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.h-text{
+    color: aliceblue;
+    max-width: 700px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#camera{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.h-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.h-text input{
+    width:60%;
+    padding:20px;
+    border:none;
+    outline:none;
+    font-size:20px;
+    border-radius: 7px;
+}
+
+.h-text button{
+    width:30%;
+    padding:20px;
+    background-color:red;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.gallary{
+    padding:100px;
+}
+
+.port-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.port-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin:20px 0px;
+    font-size:20px;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.port-menu ul li:hover{
+    color:white;
+    background-color: red;
+    border-radius:9px;
+}
+.port-menu ul li.active{
+    color:white;
+    background-color: red;
+    border-radius:9px;
+}
+
+.portfolio{
+    width:100%;
+}
+.portfolio .item{
+    width:320px;
+    height:320px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.portfolio .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.member{
+    width:100%;
+    padding: 20px 100px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.member-info{
+    text-align: center;
+}
+.member-info h1{
+    font-size: 20px;
+}
+.member-info h1 span{
+    color:red;
+}
+.member-card{
+    text-align: center;
+    padding-top:50px;
+    width:50%;
+    margin: auto;
+}
+.member-card p{
+    margin: 20px 0px;
+    line-height:20px;
+}
+
+.member-card h2{
+    margin:20px 0px;
+}
+.mem-img{
+    width:100%;
+    display:flex;
+    margin:20px 0px;
+    overflow:hidden;
+}
+
+footer{
+    width:100%;
+    background: black;
+    padding: 50px 100px;
+}
+
+.Sub{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+    border:1px solid rgba(245, 244, 244, 0.2);  
+}
+
+.Sub >div{
+    flex-basis: 50%;
+}
+.Sub h2{
+    color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.Sub p{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:20px;
+}
+
+.ntext{
+    text-align: right;
+}
+.Sub label{
+    position: relative;
+}
+.Sub  input{
+    padding: 20px;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    padding: 20px;
+    outline: none;
+
+}
+
+
+.btn{
+    position: absolute;
+    width: 30%;
+    right: 0px;
+    padding: 20px;
+    color:white;
+    background: red;
+    border:none;
+    border-radius: 0 8px 8px 0;
+}
+
+.f-contact{
+    color: aliceblue;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(245, 244, 244, 0.2);
+}
+
+.f-contact >div{
+    flex-basis: 20px;
+}
+.f-contact p{
+    line-height: 30px;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.f-contact p:hover{
+    color:white  
+}
+
+.f-contact i{
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.4s ease;
+}
+.f-contact i:hover{
+    background: transparent;
+    color:white;
+    border: 1px solid white;
+}
+.info{
+    background:url('photo/s1.jpg');
+    width:180px;
+    height: 180px;
+    background-size: cover;
+}
+
+.per{
+    color:rgb(253, 250, 250);
+    font-size: 20px;
+}
+.icon li{
+    display: flex;
+    margin: 5px;
+    color: rgb(225, 223, 223);
+}
+.info:hover {
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('photo/s1.jpg');
+}
+.info:hover .per {
+    opacity: 0.3;
+    transform: translateY(0);
+}
+.per {
+    margin:0;
+    padding:0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.8s;
+}
+.fac:hover {
+    color: rgb(63, 63, 164);
+}
+.ins:hover {
+    color: rgb(142, 29, 17);
+}
+.twi:hover {
+    color: rgb(37, 104, 221);
+}
+
+.info2:hover .per {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info2{
+    background:url('photo/s2.jpg');
+    width:180px;
+    height: 180px;
+    background-size: cover;
+}
+.info2:hover{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('photo/s2.jpg');
+}
+.info3:hover .per {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info3{
+    background:url('photo/s3.jpg');
+    width:180px;
+    height: 180px;
+    background-size: cover;
+}
+.info3:hover{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('photo/s3.jpg');
+}
+.info4:hover .per {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info4{
+    background:url('photo/s4.jpg');
+    width:180px;
+    height: 180px;
+    background-size: cover;
+}
+.info4:hover{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('photo/s4.jpg');
+}
+.info5:hover .per {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info5{
+    background:url('photo/s5.jpg');
+    width:180px;
+    height: 180px;
+    background-size: cover;
+}
+.info5:hover{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('photo/s5.jpg');
+}
+.info6:hover .per {
+    opacity: 1;
+    transform: translateY(0);
+}
+.info6{
+    background:url('photo/s6.jpg');
+    width:180px;
+    height: 180px;
+    background-size: cover;
+}
+.info6:hover{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('photo/s6.jpg');
+}
+
+
+@media only screen and (max-width:1240){
+   .gallary{
+    width:100%;
+   }
+}
